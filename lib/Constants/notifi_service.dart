@@ -31,7 +31,6 @@ class NotificationService {
   Future showNotification(
       {int id = 0, String? title, String? body, String? payLoad}) async {
     await initNotification();
-    return notificationsPlugin.show(
-        title:  title, body: body, notificationDetails:  await notificationDetails(), id: id);
+    return notificationsPlugin.show(id: id,title: title, body: body, notificationDetails:  await notificationDetails(),);
   }
 }

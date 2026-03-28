@@ -85,7 +85,7 @@ class AppConstants {
   static const String mblPumpNotOFF = "m_pump_first_r.png";
 
   static const String aeratorPumpOFF = "aerators_grey.png";
-  static const String aeratorPumpON = "aerators_g.png";
+  static const String aeratorPumpON = "aerators_g.gif";
   static const String aeratorPumpNotON = "aerators_o.png";
   static const String aeratorPumpNotOFF = "aerators_r.png";
 
@@ -899,7 +899,7 @@ class AppConstants {
   static List<int> ecModel = [64];
   static List<int> phModel = [65];
   static List<int> pumpWithValveModelList = [48, 49, 52, 53, 54, 55, ...pumpWithLightModelList];
-  static List<int> pumpWithLightModelList = [76];
+  static List<int> pumpWithLightModelList = [76,77];
   static List<int> shine2V = [48, 49];
   static List<int> shine4V = [52, 53];
   static List<int> elite10V = [54, 55];

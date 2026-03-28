@@ -11,8 +11,7 @@ import '../../../models/customer/site_model.dart';
 import '../../../modules/PumpController/view/node_settings.dart';
 import '../../../modules/UserChat/view/user_chat.dart';
 import '../../../modules/bluetooth_low_energy/view/node_connection_page.dart';
-import '../../../modules/open_ai/view/open_ai_screen.dart';
-import '../../../providers/user_provider.dart';
+ import '../../../providers/user_provider.dart';
 import '../../../repository/repository.dart';
 import '../../../services/http_service.dart';
 import '../../../utils/constants.dart';
@@ -52,13 +51,13 @@ List<Widget> appBarActions(
         irrigationLine: master.irrigationLine,
         isNarrow: isNarrow,
       ),
-      IconButton(
-        onPressed: () => Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => const AIChatScreen()),
-        ),
-        icon: const Icon(Icons.assistant),
-      ),
+      // IconButton(
+      //   onPressed: () => Navigator.push(
+      //     context,
+      //     MaterialPageRoute(builder: (context) => const AIChatScreen()),
+      //   ),
+      //   icon: const Icon(Icons.assistant),
+      // ),
     ];
   }
 
@@ -484,18 +483,18 @@ Widget _buildNonGemActions(BuildContext context, dynamic master,
               child: Icon(Icons.bluetooth),
             ),
           ),
-        InkWell(
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => const AIChatScreen()),
-            );
-          },
-          child: const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 8),
-            child: Icon(Icons.assistant),
-          ),
-        ),
+        // InkWell(
+        //   onTap: () {
+        //     Navigator.push(
+        //       context,
+        //       MaterialPageRoute(builder: (context) => const AIChatScreen()),
+        //     );
+        //   },
+        //   child: const Padding(
+        //     padding: EdgeInsets.symmetric(horizontal: 8),
+        //     child: Icon(Icons.assistant),
+        //   ),
+        // ),
       ],
     ),
   );

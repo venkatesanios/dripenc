@@ -13,15 +13,12 @@ class AIService {
 
     final body = jsonEncode({
       'model': 'gpt-3.5-turbo',
-      'messages': [
-        {
+      'messages': [{
           "role": "system",
-          "content":
-              "You are an expert crop advisor. Always respond in $selectedLanguage. "
-                  "Analyze the uploaded crop image and provide a diagnosis of any visible crop issues."
+          "content": "You are an expert crop advisor. Always respond in $selectedLanguage. "
+              "Analyze the uploaded crop image and provide a diagnosis of any visible crop issues."
         },
-        {'role': 'user', 'content': text}
-      ],
+        {'role': 'user', 'content': text}],
     });
 
     final response = await http.post(uri, headers: headers, body: body);
@@ -33,4 +30,5 @@ class AIService {
       throw Exception('AI request failed: ${response.statusCode}');
     }
   }
+
 }

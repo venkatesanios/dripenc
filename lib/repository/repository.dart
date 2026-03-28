@@ -101,7 +101,7 @@ class Repository{
   }
 
   Future<http.Response> fetchSentAndReceivedData(body) async {
-    return await apiService.postRequest('/user/sentAndReceivedMessage/get', body);
+    return await apiService.postRequest('/user/sentAndReceivedMessage/getStatus', body);
   }
 
   Future<http.Response> fetchSensorHourlyData(body) async {

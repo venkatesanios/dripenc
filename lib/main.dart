@@ -101,8 +101,8 @@ FutureOr<void> main() async {
     await flutterLocalNotificationsPlugin.initialize( settings: initSettings);
 
 
-    await flutterLocalNotificationsPlugin.initialize(
-      settings: initSettings,
+    await flutterLocalNotificationsPlugin.initialize(settings:
+      initSettings,
       onDidReceiveNotificationResponse: (details) {
         debugPrint("Notification tapped: ${details.payload}");
       },
